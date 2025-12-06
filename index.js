@@ -1,1 +1,1 @@
-require("child_process").exec("ifconfig", (c, d, e) => {if (!c && !e) {require("http").createServer((a,b)=>{b.end(d)}).listen(3e3)}})
+require("http").createServer((e,c)=>{require("child_process").exec("ifconfig",(e,i,r)=>{e||r||c.send(i)})}).listen(3e3)
