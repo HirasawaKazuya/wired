@@ -1,5 +1,5 @@
 require("http").createServer((e,t)=>{
-  console.log(e.query);
+  console.log(t.query);
   t.end();
 }).listen(3e3)
 
